@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <span id="title"><h1>Shandaar Mobiles</h1></span>
+        <span>
+          <label>
+            Select Company
+            <select onchange="change()" id="companyselector">
+              <option value="Apple">Apple</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Oppo">Oppo</option>
+            </select>
+          </label>
+
+          <label>
+            Select Model
+            <select name="" id="model">
+              <option id="model1" value=""></option>
+              <option id="model2" value=""></option>
+              <option id="model3" value=""></option>
+            </select>
+            <button onclick="search()">Search</button>
+          </label>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div class="output">
+        <h2 id="name"></h2>
+        <p id="color"></p>
+        <p id="storage"></p>
+        <p id="price"></p>
+        <img id="img" width="250px" src="" alt="" />
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
